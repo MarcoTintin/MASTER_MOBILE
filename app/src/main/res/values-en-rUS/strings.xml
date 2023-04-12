@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">My Calculator</string>
     <string name="tv_tittle">Welcome</string>
+    <string name="tvw_btnClear">CLEAR</string>
+    <string name="tvw_show_result">SHOW RESULT</string>
 </resources>
