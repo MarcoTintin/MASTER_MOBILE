@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Mi Calculadora</string>
     <string name="tv_tittle">Bienvenidos</string>
+    <string name="tvw_btnClear">BORRAR</string>
+    <string name="tvw_show_result">VER RESULTADO</string>
+    <string name="tvw_tittle_result">EL RESULTADO DE LA OPERACIÓN</string>
+    <string name="btn_back_activity">REGRESAR</string>
+    <string name="btn_share">COMPARTIR</string>
 </resources>

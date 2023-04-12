@@ -1,5 +1,6 @@
 package com.example.mycalculator
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -10,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     private var numberOne:Double=0.0;
     private var numberTwo:Double=0.0;
     private var operationOnCourse:Int = 0;
+    private var numberResult:String="";
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +40,8 @@ class MainActivity : AppCompatActivity() {
         btnClear.setOnClickListener{ resetAll() }
 
         btn_equal.setOnClickListener{ resolveOperation() }
+
+        btn_show_result.setOnClickListener{ sentResultToNewActivity() }
     }
 
     private fun pressNumber(number:String){
@@ -85,5 +89,13 @@ class MainActivity : AppCompatActivity() {
         numberOne = resultOperation as Double
 
         tvw_result.text = if("$resultOperation".endsWith(".0")) { "$resultOperation".replace(".0","") } else { "%.2f".format(resultOperation) }
+
+        numberResult = if("$resultOperation".endsWith(".0")) { "$resultOperation".replace(".0","") } else { "%.2f".format(resultOperation) }
+    }
+
+    private fun sentResultToNewActivity(){
+        val intent = Intent(this, ResultActivity::class.java)
+        intent.putExtra("result",numberResult)
+        startActivity(intent)
     }
 }
