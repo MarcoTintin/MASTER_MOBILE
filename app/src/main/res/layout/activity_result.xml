@@ -12,7 +12,7 @@
         android:layout_height="0dp"
         android:fontFamily="@font/baloo"
         android:gravity="center"
-        android:text="TextView"
+        android:text="0"
         android:textColor="#3F51B5"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline16"
@@ -39,14 +39,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.40" />
+        app:layout_constraintGuide_percent="0.45" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.60" />
+        app:layout_constraintGuide_percent="0.55" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline14"
@@ -89,7 +89,7 @@
         android:layout_height="0dp"
         android:backgroundTint="#F44336"
         android:fontFamily="@font/baloo"
-        android:text="REGRESAR"
+        android:text="@string/btn_back_activity"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
         app:layout_constraintEnd_toStartOf="@+id/guideline12"
@@ -102,7 +102,7 @@
         android:layout_height="0dp"
         android:backgroundTint="#2196F3"
         android:fontFamily="@font/baloo"
-        android:text="COMPATIR"
+        android:text="@string/btn_share"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
         app:layout_constraintEnd_toStartOf="@+id/guideline11"
@@ -115,7 +115,7 @@
         android:layout_height="0dp"
         android:fontFamily="@font/baloo"
         android:gravity="center"
-        android:text="EL RESULTADO DE LA OPERACION"
+        android:text="@string/tvw_tittle_result"
         android:textColor="#F44336"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"

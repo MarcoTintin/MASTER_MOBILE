@@ -4,4 +4,7 @@
     <string name="tv_tittle">Welcome</string>
     <string name="tvw_btnClear">CLEAR</string>
     <string name="tvw_show_result">SHOW RESULT</string>
+    <string name="tvw_tittle_result">OPERATION RESULT</string>
+    <string name="btn_back_activity">BACK</string>
+    <string name="btn_share">SHARE</string>
 </resources>

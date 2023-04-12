@@ -4,4 +4,7 @@
     <string name="tv_tittle">Welcome</string>
     <string name="tvw_btnClear">SUPPRIMER</string>
     <string name="tvw_show_result">VOIR LE RÉSULTAT</string>
+    <string name="tvw_tittle_result">LE RÉSULTAT DE L OPÉRATION</string>
+    <string name="btn_back_activity">RETURN</string>
+    <string name="btn_share">PARTAGER</string>
 </resources>
